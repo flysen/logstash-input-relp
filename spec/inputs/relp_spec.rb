@@ -32,7 +32,7 @@ describe LogStash::Inputs::Relp do
     # (colinsurprenant) don't put number of simultaneous clients too high,
     # it seems to lock no sure why. the test client code needs a very serious,
     # refactoring, its too complex and very hard to debug :P
-    let(:nclients) { rand(10) }
+    let(:nclients) { rand(1) }
 
     let(:nevents)  { 100 }
     let(:port) { rand(1024..65532) }
