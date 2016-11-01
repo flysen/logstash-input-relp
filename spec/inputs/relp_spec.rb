@@ -34,7 +34,7 @@ describe LogStash::Inputs::Relp do
     # refactoring, its too complex and very hard to debug :P
     let(:nclients) { rand(10) }
 
-    let(:nevents)  { 1 }
+    let(:nevents)  { 100 }
     let(:port) { rand(1024..65532) }
 
     let(:conf) do
