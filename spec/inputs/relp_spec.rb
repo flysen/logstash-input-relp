@@ -67,8 +67,6 @@ describe LogStash::Inputs::Relp do
       end
     end
 
-	puts events.inspect
-
     it "should do multiple connections" do
       nclients.times do |client_id|
         expect(events).to have(nevents).with("Hello from client#{client_id}")
