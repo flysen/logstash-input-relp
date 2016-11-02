@@ -87,7 +87,7 @@ describe LogStash::Inputs::Relp do
         <<-CONFIG
           input {
             relp {
-              type => "blah"
+              type => "gdgd"
               port => #{port}
               ssl_enable => true
               ssl_verify => false
